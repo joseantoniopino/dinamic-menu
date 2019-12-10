@@ -1,0 +1,65 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+/*CONTENT*/
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-align: center;
+    color: black;
+}
+
+a.nav-link{
+    font-size: 1.2rem;
+    word-spacing: 100px;
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 150px) and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 0.9;
+        letter-spacing: -2px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 720px ;
+    }
+}
